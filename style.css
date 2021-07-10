@@ -70,6 +70,11 @@ Header{
     font-family: "Ubuntu";
     color: white;
 }
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Ubuntu";
+}
 /* 2 article */
 #Sale{
     display: flex;
