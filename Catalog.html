@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleCatalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Catalog</title>
 
 </head>
@@ -42,48 +43,160 @@
                 <label for="T-ShirtOnly"></label>
                 <p>T-Shirt</p>
             </div>
+            <div>
+                <input type="checkbox" class="custom-checkbox" id="BombersOnly" onclick="displayBombers()">
+                <label for="BombersOnly"></label>
+                <p>Bombers</p>
+            </div>
+            <div>
+                <input type="checkbox" class="custom-checkbox" id="CapsOnly" onclick="displayCaps()">
+                <label for="CapsOnly"></label>
+                <p>Caps</p>
+            </div>
+            <div>
+                <input type="checkbox" class="custom-checkbox" id="TowelsOnly" onclick="displayTowels()">
+                <label for="TowelsOnly"></label>
+                <p>Towels</p>
+            </div>
+            <div>
+                <input type="checkbox" class="custom-checkbox" id="ShortsOnly" onclick="displayShorts()">
+                <label for="ShortsOnly"></label>
+                <p>Shorts</p>
+            </div>
         </article>
         <article id="Catalog">
             <div id="WinterJacket">
-                <div class="WinterJacket">
+                <div class="ShopItem">
                     <img src="CtImg/people_5_man_winter_jacket_front_black_500 (1).jpg" alt="">
                     <h1>Winter jacket</h1>                    
+                    <p>6790руб</p>
                 </div>
-                <div class="WinterJacket">
+                <div class="ShopItem">
                     <img src="CtImg/people_5_man_winter_jacket_front_black_500 (2).jpg" alt="">
                     <h1>Winter jacket</h1>
+                    <p>6890руб</p>
                 </div>
-                <div class="WinterJacket">
+                <div class="ShopItem">
                     <img src="CtImg/people_5_man_winter_jacket_front_black_500.jpg" alt="">
                     <h1>Winter jacket</h1>
+                    <p>6790руб</p>
                 </div>
             </div>
             <div id="T-Shirt">
-                <div class="T-Shirt">
+                <div class="ShopItem">
                     <img src="CtImg/people_4_manshortfull_front_white_500.jpg" alt="">
                     <h1>T-Shirt</h1>
+                    <p>1790руб</p>
                 </div>
-                <div class="T-Shirt">
+                <div class="ShopItem">
                     <img src="CtImg/people_4_manshortfull_front_white_500 (2).jpg" alt="">
                     <h1>T-Shirt</h1>
+                    <p>1290руб</p>
                 </div>
-                <div class="T-Shirt">
+                <div class="ShopItem">
                     <img src="CtImg/people_4_manshortfull_front_white_500 (1).jpg" alt="">
                     <h1>T-Shirt</h1>
+                    <p>1490руб</p>
                 </div>
             </div>
-            <div id="Hoodie">
-                <div class="Hoodie">
+            <div  id="Hoodie">
+                <div class="ShopItem">
                     <img src="CtImg/people_7_man_hoodie_oversize_front_melangeburgundy_500.jpg" alt="">
                     <h1>Hoodie owersize</h1>
+                    <p>2290руб</p>
                 </div>
-                <div class="Hoodie">
+                <div class="ShopItem">
                     <img src="CtImg/people_7_man_hoodie_oversize_front_melange_500.jpg" alt="">
                     <h1>Hoodie owersize</h1>
+                    <p>2390руб</p>
                 </div>
-                <div class="Hoodie">
+                <div class="ShopItem">
                     <img src="CtImg/people_7_man_hoodie_oversize_front_black_500 (2).jpg" alt="">
                     <h1>Hoodie owersize</h1>
+                    <p>2290руб</p>
+                </div>
+            </div>
+            <div id="Bombers">
+                <div class="ShopItem">
+                    <img src="CtImg/Бомбер (1).jpg" alt="">
+                    <h1>Bomber</h1>
+                    <p>2190руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Бомбер (2).jpg" alt="">
+                    <h1>Bomber</h1>
+                    <p>2090руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Бомбер (3).jpg" alt="">
+                    <h1>Bomber</h1>
+                    <p>2290руб</p>
+                </div>
+            </div>
+            <div id="Towels">
+                <div class="ShopItem">
+                    <img src="CtImg/Полотенце (1).jpg" alt="">
+                    <h1>Towel</h1>
+                    <p>990руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Полотенце (2).jpg" alt="">
+                    <h1>Towel</h1>
+                    <p>990руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Полотенце (3).jpg" alt="">
+                    <h1>Towel</h1>
+                    <p>990руб</p>
+                </div>
+            </div>
+            <div id="Caps">
+                <div class="ShopItem">
+                    <img src="CtImg/Шапка1.jpg" alt="">
+                    <h1>Cap</h1>
+                    <p>1290руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Шапка2.jpg" alt="">
+                    <h1>Cap</h1>
+                    <p>1290руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Шапка3.jpg" alt="">
+                    <h1>Cap</h1>
+                    <p>1290руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Кепка (1).jpg" alt="">
+                    <h1>Cap</h1>
+                    <p>1190руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Кепка (2).jpg" alt="">
+                    <h1>Cap</h1>
+                    <p>1190руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Кепка (3).jpg" alt="">
+                    <h1>Cap</h1>
+                    <p>1190руб</p>
+                </div>
+            </div>
+            <div id="Shorts">
+                <div class="ShopItem">
+                    <img src="CtImg/Шорты1 (1).jpg" alt="">
+                    <h1>Shorts</h1>
+                    <p>1990руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Шорты1 (2).jpg" alt="">
+                    <h1>Shorts</h1>
+                    <p>1990руб</p>
+                </div>
+                <div class="ShopItem">
+                    <img src="CtImg/Шорты1 (3).jpg" alt="">
+                    <h1>Shorts</h1>
+                    <p>1990руб</p>
                 </div>
             </div>
         </article>
