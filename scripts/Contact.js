@@ -9,4 +9,4 @@ function openContacts(){
         contact.style.display = "none"
         i--
     }
-}//Lol
+}
