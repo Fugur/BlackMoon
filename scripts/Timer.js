@@ -1,5 +1,5 @@
 setInterval(function (){
-    var offer = new Date("August 12, 2021 12:00:00").getTime();
+    var offer = new Date("October 26, 2021 20:00:00").getTime();
     var now = new Date().getTime();
     var time = offer - now;
     var distDays = Math.floor(time/86400000);
